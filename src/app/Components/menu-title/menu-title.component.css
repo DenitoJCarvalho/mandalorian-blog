@@ -1,0 +1,28 @@
+.container-menu h1 {
+  padding: 2rem 1.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container-menu hr {
+  margin: 1.25rem 0;
+}
+
+@media screen and (min-width: 413px) and (max-width: 768px) {
+  .container-menu h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container-menu h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container-menu h1 {
+    font-size: 6rem;
+  }
+}

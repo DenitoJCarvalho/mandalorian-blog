@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --black: #191112;
+  --medium-gray: #484445;
+  --orange: #b64419;
+  --light-gray: #71787d;
+  --beige: #b9a79b;
+  --ice: #e5e2de;
+
+  --comicNeue: 'Comic Neue', cursive;
+  --roboto: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--comicNeue), var(--roboto);
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--black);
+}
+
+h1,
+p {
+  color: var(--ice);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+  max-width: 80rem;
+  height: auto;
+}
+
+hr {
+  border-color: var(--light-gray);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}

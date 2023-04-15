@@ -1,0 +1,46 @@
+.container-news {
+  width: 100%;
+  height: auto;
+  padding: 0 1.25rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.news-img:has(img) {
+  margin-bottom: 1.25rem;
+}
+
+.news .news-date {
+  color: var(--light-gray);
+}
+
+.news {
+  margin-bottom: 1.50rem;
+}
+
+.news p {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-news {
+    margin-bottom: 1rem;
+    flex-flow: row;
+    gap: 2rem;
+  }
+
+  .news-img {
+    width: 75%;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .news p {
+    font-size: 1.250rem;
+  }
+
+}
