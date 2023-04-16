@@ -6,7 +6,7 @@
 }
 
 .container-menu hr {
-  margin: 1.25rem 0;
+  margin: 0.05rem 0 1.25rem;
 }
 
 @media screen and (min-width: 413px) and (max-width: 768px) {

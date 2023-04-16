@@ -1,43 +1,12 @@
-<div class="container-news">
+<div class="container-news" *ngFor="let item of data">
   <div class="news-img">
-    <img
-      src="https://lumiere-a.akamaihd.net/v1/images/5f68a4f290e3d800015740f5-image_dfc26bb3.jpeg?region=0,0,1536,864&width=768"
-      alt="Djin Djarinn">
+    <img src="{{ item.img }}" alt="{{ item.alt }}">
   </div>
 
   <div class="news">
     <span class="news-date">{{ newsDate }}</span>
     <p>
-      Djin Djarinn é capturado por Moff Gideon após tentativa de reconhecimento de Mandalor.
-    </p>
-  </div>
-</div>
-
-<div class="container-news">
-  <div class="news-img">
-    <img src="https://cdn.ome.lt/UURx8OJ12E6bVzPvIyE7CyzZmOc=/1200x630/smart/extras/conteudos/yoda_HmxcX1G.jpg"
-      alt="Grogo">
-  </div>
-
-  <div class="news">
-    <span class="news-date">{{ newsDate }}</span>
-    <p>
-      Grogo fica feliz ao receber seu novo brinquedinho, um droid IG-12.
-    </p>
-  </div>
-</div>
-
-<div class="container-news">
-  <div class="news-img">
-    <img
-      src="https://lumiere-a.akamaihd.net/v1/images/bo-katan_kryze_the_mandalorian_02_b7dba64d.jpeg?region=154,0,892,502"
-      alt="Boka-tan">
-  </div>
-
-  <div class="news">
-    <span class="news-date">{{ newsDate }}</span>
-    <p>
-      Boka-tan se frusta ao cair em amardilha e fica preocupada com mando.
+      {{ item.description }}
     </p>
   </div>
 </div>

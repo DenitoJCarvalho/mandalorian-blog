@@ -2,9 +2,9 @@
 
   <div class="article-photo">
     <picture>
-      <source media="(min-width: 1024px)" srcset="/assets/the-mandalorian-moff-gideon-1280.jpg">
-      <source srcset="/assets/the-mandalorian-moff-gideon-640.jpg">
-      <img src="/assets/the-mandalorian-moff-gideon-640.jpg" alt="Moff Gideon">
+      <source media="(min-width: 1024px)" srcset="{{ articlePhotoDesktop }}">
+      <source srcset="{{ articlePhotoMobile }}">
+      <img src="{{ articlePhotoDefault}}" alt="Moff Gideon">
     </picture>
   </div>
 
@@ -14,14 +14,13 @@
 
   <div class="article-name">
     <h3>
-      Moff Gideon escapa da nova república
+      {{ articleName }}
     </h3>
   </div>
 
   <article class="article-news">
     <p>
-      Segundo informações Gideon contou com a ajuda de mercenários mandalorianos para escapar. Será? Ou é alguma jogada
-      do vilão?
+      {{ articleNews }}
     </p>
   </article>
 </div>
