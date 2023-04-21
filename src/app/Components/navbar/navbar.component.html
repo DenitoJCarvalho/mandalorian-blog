@@ -1,7 +1,7 @@
-<nav class="container-navbar">
+<nav class="container-navbar" (click)="verifySizeScreen()">
   <section class="container-icons">
     <div class="menu-hamburguer">
-      <span class="material-icons">
+      <span class="material-icons" (click)="showMenuMobile()">
         menu
       </span>
     </div>
@@ -13,7 +13,7 @@
     </div>
   </section>
 
-  <ul>
+  <ul class="menu-list" #menuList>
     <li><a href="">Linkedin</a></li>
     <li><a href="">Github</a></li>
     <li><a href="">Youtube</a></li>
